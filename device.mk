@@ -32,8 +32,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.barometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.barometer.xml \
     frameworks/native/data/etc/android.hardware.sensor.hifi_sensors.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.hifi_sensors.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
-    frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml \
-    vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+    frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
@@ -67,7 +66,11 @@ PRODUCT_PACKAGES += \
 TARGET_HAS_FOD := true
 
 PRODUCT_PACKAGES += \
-    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor:64
+    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor:64 \
+		android.hardware.biometrics.fingerprint@2.3.vendor
+
+PRODUCT_COPY_FILES += \
+		frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml		
 
 # FM
 BOARD_HAVE_QCOM_FM := true
