@@ -6,3 +6,9 @@ persist.vendor.camera.multicam=TRUE
 
 # NFC
 ro.nfc.port=I2C
+
+# Me
+ro.spark.maintainer=Zhenyolka
+ro.spark.device.name=Pyxis
+ro.spark.maintainer.username=Zhenyolka
+ro.spark.group.url=https://t.me/evgeniy756
