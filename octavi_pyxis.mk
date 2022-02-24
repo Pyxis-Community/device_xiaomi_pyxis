@@ -27,3 +27,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # OctaviOS
 EXTRA_UDFPS_ANIMATIONS := true
+OCTAVI_DEVICE_MAINTAINER := zhenyolka (Evgeniy)
