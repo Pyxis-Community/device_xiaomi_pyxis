@@ -6,11 +6,12 @@
 
 $(call inherit-product, device/xiaomi/pyxis/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common OctaviOS stuff
+$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_pyxis
+PRODUCT_NAME := octavi_pyxis
 PRODUCT_DEVICE := pyxis
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9 Lite
